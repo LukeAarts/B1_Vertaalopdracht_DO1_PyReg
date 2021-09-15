@@ -69,7 +69,6 @@ while(not keuze == "9" ):
             elif ( bestelKeuze == "6"):
                 bonTotaal = bonTotaal + 9
                 bonString = bonString + "1x Parkeerdagkaart             € 9\r\n"
-            # Kassa is correct afgesloten, toon dagtotalen
             elif(bestelKeuze == "9"):
                 aantalBonnen = aantalBonnen +1
                 dagTotaal = dagTotaal + bonTotaal
@@ -111,6 +110,7 @@ while(not inKassa == (bedragInKassaBegin + dagTotaal - dagTotaalTerug )):
 
 os.system('cls')
 # Herhaal tot de gebruiker aangeeft dat het programma afgesloten moet worden
+# Kassa is correct afgesloten, toon dagtotalen
 print("Kassa klopt, programma wordt afgesloten.")
 print ("======== DAGTOTALEN ========")
 print ("Aantal bonnen: " + str(aantalBonnen))
